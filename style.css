@@ -1,0 +1,156 @@
+/*setting font family link--------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@700&display=swap');
+
+
+
+/*()implementar variáveis nas cores*/
+/*()pesquisar sobre main access e cross access*/
+
+
+
+/*reset browzer config------------------------------------------------------------------*/
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*reusable center content wrapper*/
+.container {
+    width: 86%;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+header {
+    background-color: #2E323F;
+    padding: .5em 0; /*top&bottom left&right*/
+}
+
+.logo {
+    margin: 1em;
+}
+
+/*convert colunm to row------------------------------------------------------------------*/
+.nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: .75em;
+}
+
+/*convert colums to rows------------------------------------------------------------------*/
+.nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+/*separate items----------------------------------------------------------------------------*/
+.nav-item {
+    margin-right: 2em;
+}
+
+/*styling links-----------------------------------------------------------------------------*/
+.nav-link {
+    color: #E0E0E2;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/*styling button----------------------------------------------------------------------------*/
+.nav-link-btn {
+    background: #A59678;
+    color: #E0E0E2;
+    padding: .25em 1em; /*top&bottom left&right*/
+    border-radius: 10em;
+}
+
+.nav-link:hover {
+    opacity: 0.75;
+  }
+
+
+/*styling hero part*/  
+.hero {
+    background-color: #3B4050;
+    width: 100%;
+}
+
+.hero-title {
+    color: #ffffff;
+    font-size: 4rem;
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.1;
+    width: 65%;
+}
+
+.text-accent {
+    color: #A59678;
+}
+
+.hero-text {
+    font-size: 1.4rem;
+    color: #ffffff;
+    width: 33%; /*deixar porcentagem para espaço (65 + 33 = 98, sobram 2% de espaço*/
+}
+
+/*setting flex row*/
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*styling button*/
+.hero-btn,
+.nav-btn {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #A59678;
+    padding: 1em .5em; /*top&bottom left&right*/
+    border-radius: 100px;
+}
+
+.hero-btn {
+    margin-top: 1.5em;
+}
+
+.hero-btn:hover,
+.hero-btn:focus,
+.nav-btn:hover,
+.nav-btn:focus {
+  opacity: 0.75;
+}
+
+/*styling middle section*/ 
+.middle {
+    background-color: #DBDBDB;
+    color: #3B4050;
+}
+
+.col {
+    margin-right: 1.5em;
+    text-align: center;
+}
+
+.col > h2 {
+    font-weight: bold;
+    border: solid red;
+}
