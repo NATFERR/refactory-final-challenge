@@ -27,7 +27,7 @@ img {
 
 /*reusable center content wrapper*/
 .container {
-    width: 86%;
+    width: 90%;
     margin: 0 auto;
     max-width: 1000px;
 }
@@ -103,6 +103,7 @@ header {
 
 .hero-text {
     font-size: 1.4rem;
+    align-self: center;
     color: #ffffff;
     width: 33%; /*deixar porcentagem para espaço (65 + 33 = 98, sobram 2% de espaço*/
 }
@@ -111,7 +112,7 @@ header {
 .row {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: space-between;
 }
 
 /*styling button*/
@@ -141,16 +142,105 @@ header {
 
 /*styling middle section*/ 
 .middle {
-    background-color: #DBDBDB;
+    background-color: #ECE8E8;
     color: #3B4050;
+    padding: 2em 0;
 }
 
 .col {
-    margin-right: 1.5em;
     text-align: center;
 }
 
-.col > h2 {
-    font-weight: bold;
-    border: solid red;
+.col + .col {
+    margin-left: 5em;
 }
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    margin: 0;
+}
+
+/*styling last section*/
+
+.last {
+    padding: 3em 0;
+}
+
+.last-main {
+    width: 65%;
+}
+
+.last-aside {
+    width: 30%;
+    text-align: center;
+    align-self: flex-start;
+    
+    
+}
+
+.last-main > h2 {
+    font-size: 2em;
+}
+
+.box {
+    padding: 1em 1em;
+    color: #ffffff;
+    background-color: #3B4050;
+    margin-bottom: 1em;
+}
+
+/*styling footer*/
+.footer {
+    color: #ffffff;
+    background-color: #3B4050;
+    font-size: 1rem;
+    padding: 1em 1em;
+}
+
+.col1 {
+    width: 45%;
+}
+
+.col2 {
+    width: 45%;
+}
+
+.column {
+   text-align: left;
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-family:'Oswald', sans-serif;
+}
+
+.footer-title {
+    text-align: center;
+    padding: 1rem;
+}
+
+.footer-title > h2 {
+    font-size: 2.5rem;
+}
+
+.footer-list {
+    font-size: .75rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 3;
+}
+
+.nav-link-f {
+    color: #E0E0E2;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-link-f:hover {
+    opacity: 0.75;
+  }
